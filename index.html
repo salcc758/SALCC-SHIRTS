@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SALCC Shirt Availability</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Navigation</h2>
+      <ul>
+        <li>
+          <a href="#">About</a><br />
+          <small style="color:#666;">This website was created for the students of SALCC to view what colour of shirts and size that are in stock and are available to buy at the office before actually spending your money. </small>
+        </li>
+        
+        <li>
+          <a href="#">Contact</a><br />
+          <small style="color:#666;">Telephone: 1 (758) 457-7300</small>
+        </li>
+      </ul>
+      </aside>
+
+    <main class="main-content">
+      <header class="header">
+        <h1>SALCC Shirts</h1>
+        <a href="admin.html" class="admin-btn">Admin</a>
+      </header>
+
+      <section class="search-section">
+        <h2>Shirt Details</h2>
+        <label for="size">Size:</label>
+        <select id="size">
+          <option value="">Select Size</option>
+          <option value="S">Small</option>
+          <option value="M">Medium</option>
+          <option value="L">Large</option>
+          <option value="XL">X-Large</option>
+        </select>
+
+        <label for="color">Color:</label>
+        <select id="color">
+          <option value="">Select Color</option>
+          <option value="Red">Red</option>
+          <option value="Blue">Blue</option>
+          <option value="Green">Green</option>
+          <option value="White">White</option>
+          <option value="Black">Black</option>
+        </select>
+
+        <button onclick="checkAvailability()">Search</button>
+      </section>
+
+      <section class="results-section">
+        <h3>Results</h3>
+        <table id="results-table">
+          <thead>
+            <tr>
+              <th>Size</th>
+              <th>Color</th>
+              <th>Availability</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
